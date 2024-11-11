@@ -149,6 +149,7 @@ export default function Component() {
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
         :root {
+          --color: #E1E1E1;
           --bg-color: #f8f9fa;
           --text-color: #333;
           --card-bg: #ffffff;
@@ -173,13 +174,18 @@ export default function Component() {
           color: var(--text-color);
           margin: 0;
           padding: 0;
-        }
+          background-color: #f3f3f3;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+            background-size: 55px 55px;
+
+        
+          }
 
         .container {
           max-width: 1200px;
           margin: 0 auto;
           padding: 40px 20px;
-        }
+          }
 
         .heading {
           font-size: 4rem;
